@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
                                   0.0107012};
     rtde_control.moveL(target, 0.1, 0.1);
 
-    rtde_control.speedL({0, 0,-0.01, 0, 0, 0});
+    /*rtde_control.speedL({0, 0,-0.01, 0, 0, 0});
 
     while(rtde_receive.getActualTCPForce()[2] < 30){
         std::cout << rtde_receive.getActualTCPForce()[2] << std::endl;
@@ -28,8 +28,9 @@ int main(int argc, char* argv[])
 
     std::cout << rtde_receive.getActualTCPForce()[2] << std::endl;
     rtde_control.speedStop();
+    */
 
-    /*while(1){
+    while(1){
         rtde_control.teachMode();
         std::cin.get();
 
@@ -55,7 +56,7 @@ int main(int argc, char* argv[])
         std::cout << "rz: " << boardPlane[5] << std::endl;
 
         std::cout << std::endl;
-    }*/
+    }
 
     return 0;
 }
